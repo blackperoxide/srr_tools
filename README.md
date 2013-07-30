@@ -19,7 +19,8 @@ Reading a bytes file works something like this:
 
 And Writing works like this:
 
-    with open('/path/to/whatever/filename.bytes', 'wb') as f:    
-	f.write(i.SerializeToString())
+    f = open('/path/to/whatever/filename.bytes', 'wb')
+    f.write(i.SerializeToString())
+    f.close()
 
 
