@@ -2,11 +2,8 @@ This repository contains quick and dirty tools to look at the Shadowrun Return *
 
 The proto directory contains the isogame.proto file, aswell as some of the default google protobuf definitions.
 
-The src directory, at the moment contains only isogame_pb2.py, show_item.py and show_character_instance.py which just show the plaintext for this type of serialized messages.
-
-In order to use this you will have to have google protobuf installed.
-
-    pip install protobuf
+The src directory contains two sample scripts, show_item.py and show_character_instance.py aswell as the generated protobuf library isogame_pb2.py and the protobuf egg file.
+Because of the egg, the sample scripts should be able to run with just a clean python installation.
 
 The file isogame_pb2.py is a python library that allows you to read and write any of the *.bytes files, provided you know its type.
 
