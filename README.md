@@ -18,6 +18,7 @@ Reading a bytes file works something like this:
     i.ParseFromString(open('/path/to/chars/bla.ch_inst.bytes").read())
 
 And Writing works like this:
+
     with open('/path/to/whatever/filename.bytes', 'wb') as f:    
 	f.write(i.SerializeToString())
 
